@@ -1,5 +1,5 @@
 (defun f-pascal (x y)
-  'y must not big than x'
+  "y must not big than x"
   (if (or (= y 0) (= x y)) 1
       (+ (f-pascal (- x 1) (- y 1)) (f-pascal (- x 1) y))))
 

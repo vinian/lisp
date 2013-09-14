@@ -6,3 +6,8 @@
       (dolist (z y)
         (incf sum z)))
     sum))
+
+
+(defmacro my-add-1 (&rest args)
+  `(+ ,@args))
+
